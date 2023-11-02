@@ -1,8 +1,8 @@
 package com.xworkz.Shopping.things;
 
-public class Account extends Bank{
+public class Indoor extends Sports {
 	
-	public Account() {
+	public Indoor() {
 		super();
 		System.out.println("this is child class");
 	}

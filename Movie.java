@@ -1,8 +1,8 @@
 package com.xworkz.Shopping.things;
 
-public class Account extends Bank{
+public class Movie extends Director {
 	
-	public Account() {
+	public Movie() {
 		super();
 		System.out.println("this is child class");
 	}

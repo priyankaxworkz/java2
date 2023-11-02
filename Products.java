@@ -5,13 +5,15 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class Bank {
-	private String bankName;
-	private int totalAccounts;
-	private String manager;
-	private int amounts;
+
+public class Products {
 	
-	public Bank() {
+	private String productName;
+	private int price;
+	private String stores;
+	private float quality;
+	
+	public Products() {
 		System.out.println("this is parent class");
 	}
 
