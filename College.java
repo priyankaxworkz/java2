@@ -1,28 +1,25 @@
-package com.xworkz.test.things;
+package com.xworkx.educationimplementation;
 
-public class College {
-	
-	public String collegeName;
-	public int fees;
-	public byte teachers;
-	public String principleName;
-	public long contactNumber;
-	
-	public College() {
-		System.out.println("this is default constructor");
+import com.xworkz.education.abstracts.Education;
+
+public class College  extends Education{
+
+	public void minister() {
+		System.out.println("this is education minister is sudhakar");
 	}
 	
-public College(String collegeName,int fees,byte teachers,String principleName,long contactNumber) {
+	public void managment() {
+		System.out.println("the managment is good");
+	}
+	
+	public void totalDepartment() {
 		
-		this.collegeName=collegeName;
-		this.fees=fees;
-		this.teachers=teachers;
-		this.principleName=principleName;
-		this.contactNumber=contactNumber;
-		
-		System.out.println(this.collegeName);
-		System.out.println(this.fees);
-		System.out.println(this.teachers);
-		System.out.println(this.principleName);
+		System.out.println("the total department in the college");
+	}
+	
+	public void educationType() {
+		System.out.println("the education type is offline");
+	}
 }
-}
+
+
