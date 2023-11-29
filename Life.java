@@ -1,5 +1,7 @@
 package com.xworkz.life.abstracts;
 
+import com.xworkz.lifedto.LifeDto;
+
 public abstract class Life {
 	
 	public abstract void savings();
@@ -21,6 +23,8 @@ public abstract class Life {
 	public abstract void happiness();
 	
 	public abstract void roles();
+	
+	public abstract boolean onSave(LifeDto lifeDto);
 	
 	
 }
