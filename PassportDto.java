@@ -1,0 +1,166 @@
+package com.xworkz.passportdto;
+
+import java.util.Date;
+
+public class PassportDto {
+	
+	private String userName;
+	private Object dateOfBirth;
+	private String gender;
+	private Date registrationDate;
+	private String currentAddress;
+	private String permanentAddress;
+	private String paymentOption;
+	private String officeLocation;
+	private int age;
+	private long contactNumber;
+	private String email;
+	private int applicationId;
+	
+	public PassportDto() {
+		System.out.println("no args constructor");
+	}
+
+	public PassportDto(String userName, Date dateOfBirth, String gender, Date registrationDate, String currentAddress,
+			String permanentAddress, String paymentOption, String officeLocation, int age, long contactNumber,
+			String email, int applicationId) {
+	
+		this.userName = userName;
+		this.dateOfBirth = dateOfBirth;
+		this.gender = gender;
+		this.registrationDate = registrationDate;
+		this.currentAddress = currentAddress;
+		this.permanentAddress = permanentAddress;
+		this.paymentOption = paymentOption;
+		this.officeLocation = officeLocation;
+		this.age = age;
+		this.contactNumber = contactNumber;
+		this.email = email;
+		this.applicationId = applicationId;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public void setDateOfBirth(Object object) {
+		this.dateOfBirth = object;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public void setRegistrationDate(Date registrationDate) {
+		this.registrationDate = registrationDate;
+	}
+
+	public void setCurrentAddress(String currentAddress) {
+		this.currentAddress = currentAddress;
+	}
+
+	public void setPermanentAddress(String permanentAddress) {
+		this.permanentAddress = permanentAddress;
+	}
+
+	public void setPaymentOption(String paymentOption) {
+		this.paymentOption = paymentOption;
+	}
+
+	public void setOfficeLocation(String officeLocation) {
+		this.officeLocation = officeLocation;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public void setContactNumber(long contactNumber) {
+		this.contactNumber = contactNumber;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public void setApplicationId(int applicationId) {
+		this.applicationId = applicationId;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public Object getDateOfBirth() {
+		return dateOfBirth;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public Date getRegistrationDate() {
+		return registrationDate;
+	}
+
+	public String getCurrentAddress() {
+		return currentAddress;
+	}
+
+	public String getPermanentAddress() {
+		return permanentAddress;
+	}
+
+	public String getPaymentOption() {
+		return paymentOption;
+	}
+
+	public String getOfficeLocation() {
+		return officeLocation;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public long getContactNumber() {
+		return contactNumber;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public int getApplicationId() {
+		return applicationId;
+	}
+	
+	public String toString() {
+		System.out.println("this is to String method");
+		return "username:"+userName+""+"dateOfBirth:"+dateOfBirth+""+"gender:"+gender+""+"registrationDate:"+registrationDate+
+				""+"currentAddress:"+currentAddress+""+"permanentAddress:"+permanentAddress+""+"paymentOption:"+paymentOption+
+				""+"officeLocation:"+officeLocation+""+"age:"+age+""+"contactNumber:"+contactNumber+""+"email:"+email+
+				""+"applicationId:"+applicationId;
+	}
+
+	@Override
+	public int hashCode() {
+		System.out.println("this is hash code method");
+		return 20;
+		
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		PassportDto passport=(PassportDto) obj;
+		return true;
+		
+		
+	}
+
+	
+}
